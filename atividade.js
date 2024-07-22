@@ -71,7 +71,7 @@ const Saldomensal = (salario, qnthorasextra, faltas) =>{
     const valorhoras = salario / 176
     let horasfaltinhas = faltas * 8 *valorhoras
     let horasextras = parseFloat(valorhora *1.5 *qnthorasextra)
-    let salarioliq = salario + horasextras -falta
+    let salarioliq = salario + horasextras - horasfaltinhas
 
 
     console.log(`Seu salário é: ${salario}\n Seu salário líquido é:${salarioliq}\n Seu total em horas extras é: ${horasextras} \n Total descontado em faltas: ${horasfaltinhas}`);
