@@ -70,14 +70,21 @@ const Saldomensal = (salario, qnthorasextra, faltas) =>{
 
     const valorhoras = salario / 176
     let horasfaltinhas = faltas * 8 *valorhoras
-    let horasextras = parseFloat(valorhora *1.5 *qnthorasextra)
+    let horasextras = parseFloat(valorhoras *1.5 *qnthorasextra)
     let salarioliq = salario + horasextras - horasfaltinhas
+    let salariocortado = salario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    let salarioliqcortado = salarioliq.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    let horasextrascortado = horasextras.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    let horasfaltinhascortado = horasfaltinhas.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
 
-    console.log(`Seu salário é: ${salario}\n Seu salário líquido é:${salarioliq}\n Seu total em horas extras é: ${horasextras} \n Total descontado em faltas: ${horasfaltinhas}`);
+    console.log(`Seu salário é: ${salariocortado}\n Seu salário líquido é: ${salarioliqcortado}\n Seu total em horas extras é: ${horasextrascortado} \n Total descontado em faltas: ${horasfaltinhascortado}`);
 
 }
 Saldomensal(1800, 10, 2)
 
-const valoresAleatorios = ["dadad", 'fiufiu', 8,9 , 100]
-    console.log(valoresAleatorios[0], valoresAleatorios[valoresAleatorios.length-1]);
+const random = ["dadad", 'fiufiu', 8, 9 , 100]
+function valoresAleatorios(){
+    console.log(random[0], random[random.length-1]);
+}
+valoresAleatorios(random)
