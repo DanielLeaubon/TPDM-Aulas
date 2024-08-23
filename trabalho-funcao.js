@@ -26,3 +26,7 @@ Celular1.exibepreço()
 Celular1.salvaTudo()
 Celular12.exibepreço()
 Celular12.salvaTudo()
+
+
+
+const Bolos = new Object()
