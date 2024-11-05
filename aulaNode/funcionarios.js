@@ -1,4 +1,4 @@
-const urlLocal = require('./funcionarios.json');
+const urlLocal = require('../funcionarios.json');
 
 const brasileiros = f => f.pais === 'Brasil';
 const mulheres = f => f.genero === 'F';
